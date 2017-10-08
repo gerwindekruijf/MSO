@@ -11,14 +11,16 @@ namespace Lab3
         {
         }
 
-        private void Flush()
-        {
-        }
-
         private void Print(Ticket ticket)
         {
             // Print uit
             Flush(); 
         }
+
+        private void Flush()
+        {
+
+        }
+
     }
 }
