@@ -7,17 +7,19 @@ namespace Lab3
 {
     class Ticket
     {
-        double price;
-        Location destination, startLocation;
-        bool isFirstClass, isRetour;
+        public double price;
+        public Location destination, startLocation;
+        public bool isFirstClass, isRetour;
+        public DateTime tijd; //Tijd is zeker belangrijk
 
-        public Ticket(double p, Location des, Location start, bool firstClass, bool retour)
+        public Ticket(double p, Location des, Location start, bool firstClass, bool retour, DateTime t)
         {
             price = p;
             destination = des;
             startLocation = start;
             isFirstClass = firstClass;
-            isRetour = retour;          
+            isRetour = retour;
+            tijd = t;          
         }
     }
 }

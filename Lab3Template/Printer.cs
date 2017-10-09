@@ -13,7 +13,10 @@ namespace Lab3
 
         private void Print(Ticket ticket)
         {
-            // Print uit
+            //Zoiets? 
+            string bon;
+            bon = ticket.tijd.ToString() + "\n" + ticket.price.ToString() + "\n"
+                + ticket.startLocation.location + "to: " + ticket.destination.location;
             Flush(); 
         }
 

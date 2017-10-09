@@ -7,7 +7,7 @@ namespace Lab3
 {
     class Location
     {
-        string location; 
+        public string location; 
 
         public Location(string s)
         {

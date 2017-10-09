@@ -17,7 +17,7 @@ namespace Lab3
         }
 
         //Deze twee parameters om uit te rekenen
-        public void GiveBackCash()
+        public void GiveBackCash(double wisselgeld)
         {
             //Laat geld eruit rollen
         }
@@ -29,8 +29,11 @@ namespace Lab3
 
         public void HandlePayment()
         {
-            //if(bedrag > ticket.prijs)
-                //GiveBackCash();
+            RequestPayment(); 
+            /* 
+            if(bedrag > ticket.price)
+                //GiveBackCash(bedrag - ticket.price);
+                */
         }
 
     }
