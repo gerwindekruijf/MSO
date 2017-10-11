@@ -13,7 +13,6 @@ namespace Lab3
 
         public PayHandler()
         {
-
         }
 
         //Deze twee parameters om uit te rekenen

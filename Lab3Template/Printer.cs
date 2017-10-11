@@ -13,16 +13,25 @@ namespace Lab3
 
         private void Print(Ticket ticket)
         {
-            //Zoiets? 
-            string bon;
-            bon = ticket.tijd.ToString() + "\n" + ticket.price.ToString() + "\n"
-                + ticket.startLocation.location + "to: " + ticket.destination.location;
+            string s = "no";
+            string t = "no";
+            if (ticket.isFirstClass)
+                s = "yes";
+
+            if (ticket.isRetour)
+                t = "yes";
+
+            string papier;
+            papier = ticket.current.station + "to: " + ticket.destination.station
+                + ticket.tijd.ToString() + "\n" + ticket.price.ToString() + "\n"
+                + "First Class: " + s + "\n" + "Retour: " + t;  
+            
             Flush(); 
         }
 
         private void Flush()
         {
-
+            
         }
 
     }

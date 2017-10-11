@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Lab3
 {
-    class Location
+    class Trainstation
     {
-        public string location; 
+        public string station; 
 
-        public Location(string s)
+        public Trainstation(string s)
         {
-            location = s; 
+            station = s; 
         }
     }
 }
