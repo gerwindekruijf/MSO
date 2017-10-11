@@ -9,6 +9,10 @@ namespace Lab3
     {
         Scanner scanner;
         Transactie transactie = new Transactie();
+        IKEAMyntAtare2000 coinmachine;
+        ICard card;
+        UIInfo UI; 
+
         //Pricecalc calculator; 
 
         public PayHandler()
@@ -18,21 +22,19 @@ namespace Lab3
         //Deze twee parameters om uit te rekenen
         public void GiveBackCash(double wisselgeld)
         {
-            //Laat geld eruit rollen
+            //Geef geld terug
         }
 
         public void RequestPayment()
         {
-            scanner.RequestCash();
+            scanner.RequestMoney();
         }
 
-        public void HandlePayment()
+        public void HandlePayment(Ticket ticket)
         {
-            RequestPayment(); 
-            /* 
-            if(bedrag > ticket.price)
-                //GiveBackCash(bedrag - ticket.price);
-                */
+            RequestPayment();
+            if ((double)UI.Payment > ticket.price)
+                GiveBackCash((double)UI.Payment - ticket.price);
         }
 
     }

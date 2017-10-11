@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 
@@ -24,14 +26,15 @@ namespace Lab3
             string papier;
             papier = ticket.current.station + "to: " + ticket.destination.station
                 + ticket.tijd.ToString() + "\n" + ticket.price.ToString() + "\n"
-                + "First Class: " + s + "\n" + "Retour: " + t;  
-            
-            Flush(); 
+                + "First Class: " + s + "\n" + "Retour: " + t;
+
+            Console.Write(papier);
+            Flush();
+
         }
 
         private void Flush()
-        {
-            
+        { 
         }
 
     }
