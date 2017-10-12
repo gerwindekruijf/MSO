@@ -17,6 +17,7 @@ namespace Lab3
 		RadioButton fortyDiscount;
 		ComboBox payment;
 		Button pay;
+        Printer printer;
 
 		public UI ()
 		{
@@ -254,7 +255,19 @@ namespace Lab3
 				(string)toBox.SelectedItem,
 				cls, way, dis, pment);
 		}
-#endregion
-	}
+        #endregion
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // UI
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "UI";
+            this.ResumeLayout(false);
+
+        }
+    }
 }
 

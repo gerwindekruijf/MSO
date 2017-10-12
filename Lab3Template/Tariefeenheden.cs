@@ -6,6 +6,7 @@ namespace Lab3
 	{
 		public static String[] getStations()
 		{
+            //Dit veranderen door Trainstations 
 			return new String[] {
 				"Utrecht Centraal",
 				"Gouda",

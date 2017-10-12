@@ -4,11 +4,13 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Lab3
 {
     class Printer
     {
+        string papier;
         public Printer()
         {
         }
@@ -23,18 +25,19 @@ namespace Lab3
             if (ticket.isRetour)
                 t = "yes";
 
-            string papier;
             papier = ticket.current.station + "to: " + ticket.destination.station
                 + ticket.tijd.ToString() + "\n" + ticket.price.ToString() + "\n"
                 + "First Class: " + s + "\n" + "Retour: " + t;
 
-            Console.Write(papier);
+            MessageBox.Show(papier);
             Flush();
 
         }
 
         private void Flush()
-        { 
+        {
+            //Flush inkt man broer
+            papier = "";
         }
 
     }
