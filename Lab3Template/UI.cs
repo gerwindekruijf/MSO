@@ -18,6 +18,7 @@ namespace Lab3
 		ComboBox payment;
 		Button pay;
         Printer printer;
+        Ticket ticket;
 
 		public UI ()
 		{
@@ -64,8 +65,12 @@ namespace Lab3
 				price += 0.50f;
 			}
 
-			// Pay
-			switch (info.Payment) {
+
+            //ticket = new Ticket(price, ) 
+            // New transaction
+
+            // Pay
+            switch (info.Payment) {
 			case UIPayment.CreditCard:
 				CreditCard c = new CreditCard ();
 				c.Connect ();

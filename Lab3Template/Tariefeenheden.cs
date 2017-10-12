@@ -4,7 +4,7 @@ namespace Lab3
 {
 	public static class Tariefeenheden
 	{
-		public static String[] getStations()
+		public static string[] getStations()
 		{
             //Dit veranderen door Trainstations 
 			return new String[] {

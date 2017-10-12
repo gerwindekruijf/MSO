@@ -15,6 +15,7 @@ namespace Lab3
         {
         }
 
+        //Print Handler erbij 
         private void Print(Ticket ticket)
         {
             string s = "no";
